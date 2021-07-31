@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import EBrand from '../public/assets/images/GreenCartIcon.svg'
+import HeaderItem from './HeaderItem'
 
 const Header = () => {
     return (
@@ -8,7 +9,13 @@ const Header = () => {
             <Image 
             
             className='object-contain'
-            src={EBrand} alt='a image'/>
+            src={EBrand} alt='a image'
+            width={200}
+            height={100}
+            />
+            <div>
+                <HeaderItem />
+            </div>
         </header>
     )
 }
