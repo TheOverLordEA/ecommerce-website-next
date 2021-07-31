@@ -1,3 +1,14 @@
+import {
+    BadgeCheckIcon,
+    CollectionIcon,
+    HomeIcon,
+    LightningBoltIcon,
+    SearchIcon,
+    UserIcon,
+} from '@heroicons/react/outline'
+
+
+
 import Image from 'next/image'
 import EBrand from '../public/assets/images/GreenCartIcon.svg'
 import HeaderItem from './HeaderItem'
@@ -14,7 +25,7 @@ const Header = () => {
             height={100}
             />
             <div>
-                <HeaderItem />
+                <HeaderItem title='HOME' Icon={HomeIcon}/>
             </div>
         </header>
     )
