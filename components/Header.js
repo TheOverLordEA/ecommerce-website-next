@@ -18,7 +18,7 @@ const Header = () => {
         className="object-contain"
         src={EBrand}
         alt="a image"
-        width={200}
+        width={180}
         height={100}
       />
       <div>
