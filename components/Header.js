@@ -1,8 +1,6 @@
 import {
   BadgeCheckIcon,
-  CollectionIcon,
   HomeIcon,
-  LightningBoltIcon,
   SearchIcon,
   UserIcon,
 } from "@heroicons/react/outline";
