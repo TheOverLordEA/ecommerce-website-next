@@ -12,7 +12,7 @@ import Search from "./Search";
 
 const Header = () => {
   return (
-    <header className="flex items-center ">
+    <header className="flex items-center bg-black">
       <Image
         className="object-contain"
         src={EBrand}
