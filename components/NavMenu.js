@@ -22,6 +22,7 @@ class NavMenu extends React.Component {
         width={180}
         isOpen={this.state.menuOpen}
         onStateChange={(state) => this.handleStateChange(state)}
+        className="bg-gray-100 w-8"
       >
         <Link href="/Build">
           <div onClick={() => this.closeMenu()}>Build</div>

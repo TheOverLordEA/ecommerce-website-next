@@ -14,7 +14,7 @@ import Search from "./Search";
 const Header = () => {
   return (
     <header className="flex items-center bg-black">
-      <NavMenu />
+      <NavMenu className="flex bg-white" width={180} />
       <Image
         className="object-contain"
         src={EBrand}
