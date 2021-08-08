@@ -21,17 +21,17 @@ class NavMenu extends React.Component {
         noOverlay
         isOpen={this.state.menuOpen}
         onStateChange={(state) => this.handleStateChange(state)}
-        burgerBarClassName="bg-gray-100 h-1 w-10px"
-        burgerButtonClassName="p-fixed w-1 h-30px"
-        crossButtonClassName="w-24px"
+        burgerBarClassName="bg-blue-800 w-5 h-1"
+        burgerButtonClassName="flex w-1 h-1"
+        menuClassName="w-1"
       >
-        <Link href="/Build">
-          <abbr onClick={() => this.closeMenu()}>Build</abbr>
-        </Link>
-        <Link href="/Build">
+        <Link href="/" alt="">
           <a onClick={() => this.closeMenu()}>Build</a>
         </Link>
-        <Link href="/Build">
+        <Link href="/">
+          <a onClick={() => this.closeMenu()}>Build</a>
+        </Link>
+        <Link href="/">
           <a onClick={() => this.closeMenu()}>Build</a>
         </Link>
       </Menu>
