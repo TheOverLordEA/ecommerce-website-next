@@ -17,24 +17,29 @@ class NavMenu extends React.Component {
   }
   render() {
     return (
-      <Menu
-        noOverlay
-        isOpen={this.state.menuOpen}
-        onStateChange={(state) => this.handleStateChange(state)}
-        burgerBarClassName="bg-blue-800 w-5 h-1"
-        burgerButtonClassName="flex w-1 h-1"
-        menuClassName="w-1"
-      >
-        <Link href="/" alt="">
-          <a onClick={() => this.closeMenu()}>Build</a>
-        </Link>
-        <Link href="/">
-          <a onClick={() => this.closeMenu()}>Build</a>
-        </Link>
-        <Link href="/">
-          <a onClick={() => this.closeMenu()}>Build</a>
-        </Link>
-      </Menu>
+      <div>
+        <Menu
+          left
+          noOverlay
+          isOpen={this.state.menuOpen}
+          onStateChange={(state) => this.handleStateChange(state)}
+          burgerButtonClassName="w-10 h-10 bg-black fixed"
+          menuClassName="bg-black"
+          burgerBarClassName="bg-indigo-500"
+        >
+          <button ReactBurgerMenuBtn="width-1">
+            <Link href="/" alt="">
+              <a onClick={() => this.closeMenu()}>Build</a>
+            </Link>
+            <Link href="/">
+              <a onClick={() => this.closeMenu()}>Build</a>
+            </Link>
+            <Link href="/">
+              <a onClick={() => this.closeMenu()}>Build</a>
+            </Link>
+          </button>
+        </Menu>
+      </div>
     );
   }
 }
