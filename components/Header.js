@@ -12,7 +12,7 @@ import Search from "./Search";
 
 const Header = () => {
   return (
-    <header className="flex items-center bg-black w-auto p-2">
+    <header className="flex items-center bg-black w-auto p-2 sticky">
       <NavMenu />
 
       <Search className="flex flex: 1 1 0% items-center rounded" />
