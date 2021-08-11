@@ -4,8 +4,6 @@ import {
   LocationMarkerIcon,
 } from "@heroicons/react/solid";
 
-import Image from "next/image";
-import EBrand from "../public/assets/images/GreenCartIcon.svg";
 import HeaderItem from "./HeaderItem";
 import NavMenu from "./NavMenu";
 import Search from "./Search";
