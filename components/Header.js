@@ -19,6 +19,7 @@ const Header = () => {
         <HeaderItem title="HOME" Icon={UserIcon} />
         <HeaderItem title="USER" Icon={ShoppingCartIcon} />
       </div>
+      <Banner />
     </header>
   );
 };
