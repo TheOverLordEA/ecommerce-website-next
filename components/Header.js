@@ -7,6 +7,7 @@ import {
 import HeaderItem from "./HeaderItem";
 import NavMenu from "./NavMenu";
 import Search from "./Search";
+import Banner from "./Banner";
 
 const Header = () => {
   return (
