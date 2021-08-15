@@ -1,7 +1,11 @@
+import "image";
+
 const Banner = () => {
   return (
     <div className>
-      <div></div>
+      <div>
+        <Image />
+      </div>
     </div>
   );
 };
