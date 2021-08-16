@@ -1,5 +1,5 @@
 const NavItem = () => {
-  return <div></div>;
+  return <div className="flex"></div>;
 };
 
 export default NavItem;

@@ -2,6 +2,7 @@ import {
   UserIcon,
   ShoppingCartIcon,
   LocationMarkerIcon,
+  AnnotationIcon,
 } from "@heroicons/react/solid";
 
 import { NavMenu, Search, Banner } from "./index";
@@ -18,6 +19,7 @@ const Header = () => {
           <HeaderItem title="Where" Icon={LocationMarkerIcon} />
           <HeaderItem title="HOME" Icon={UserIcon} />
           <HeaderItem title="USER" Icon={ShoppingCartIcon} />
+          <HeaderItem title="ENG" Icon={AnnotationIcon} />
         </div>
       </header>
 

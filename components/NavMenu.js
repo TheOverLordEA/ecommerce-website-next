@@ -1,20 +1,53 @@
 import React from "react";
+import { Menu, Transition } from "@headlessui/react";
+import Link from "next/link";
 import { MenuIcon } from "@heroicons/react/solid";
+import { Fragment, useEffect, useRef, useState } from "react";
 
-class NavMenu extends React.Component {
-  state = {
-    menuOpen: false,
-  };
-  handleStateChange(state) {
-    this.setState({ menuOpen: state.isOpen });
-  }
-  render() {
-    return (
-      <div className="flex h-8 items-center p-2 hover:text-white">
-        <MenuIcon className=" cursor-pointer h-10" onClick="/" />
-      </div>
-    );
-  }
-}
+const NavMenu = () => {
+  return (
+    <Menu>
+      <Menu.Button className="inline-flex ">
+        {" "}
+        <MenuIcon className="w-8" />
+      </Menu.Button>
+      <Transition
+        enter="transition duration-100 ease-out"
+        enterFrom="transform scale-95 opacity-0"
+        enterTo="transform scale-100 opacity-100"
+        leave="transition duration-75 ease-out"
+        leaveFrom="transform scale-100 opacity-100"
+        leaveTo="transform scale-95 opacity-0"
+      >
+        <Menu.Items className="w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div className="px-1 py-1 ">
+            <Menu.Item>
+              {({ active }) => (
+                <Link
+                  className={
+                    active ? "bg-blue-500 text-white" : "bg-white text-black"
+                  }
+                  href="/"
+                >
+                  Account
+                </Link>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <Link className={`${active && "bg-blue-800"}`} href="/">
+                  Build
+                </Link>
+              )}
+            </Menu.Item>
+            <Menu.Item disabled>
+              <span className="opacity-80">TheE work w</span>
+            </Menu.Item>
+          </div>
+        </Menu.Items>
+      </Transition>
+    </Menu>
+  );
+};
 
 export default NavMenu;
