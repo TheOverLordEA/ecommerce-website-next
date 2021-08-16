@@ -4,10 +4,7 @@ import {
   LocationMarkerIcon,
 } from "@heroicons/react/solid";
 
-import HeaderItem from "./HeaderItem";
-import NavMenu from "./NavMenu";
-import Search from "./Search";
-import Banner from "./Banner";
+import { HeaderItem, NavMenu, Search, Banner } from "./index";
 
 const Header = () => {
   return (

@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Logo from "../components/Logo";
+import { Header, Logo } from "../components";
 
 export default function Home() {
   return (
