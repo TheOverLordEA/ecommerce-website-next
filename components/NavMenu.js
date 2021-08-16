@@ -10,8 +10,8 @@ class NavMenu extends React.Component {
   }
   render() {
     return (
-      <div className="flex h-8 items-center p-2">
-        <MenuIcon className="curosor-pointer h-10" onClick="/" />
+      <div className="flex h-8 items-center p-2 hover:text-white">
+        <MenuIcon className=" cursor-pointer h-10" onClick="/" />
       </div>
     );
   }
