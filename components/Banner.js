@@ -3,8 +3,13 @@ import Good from "../public/assets/images/GreenCartIcon.svg";
 
 const Banner = () => {
   return (
-    <div className="relative h-[380px]">
-      <Image src={Good} layout="fill" objectFit="cover" />
+    <div className="">
+      <Image
+        src={Good}
+        alt=""
+        className="bg-contain bg-center h-[100px]"
+        style="background-image"
+      />
     </div>
   );
 };
