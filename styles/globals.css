@@ -10,3 +10,9 @@
     @apply w-1;
   }
 }
+
+@layer components {
+  .link {
+    @apply hover:underline;
+  }
+}

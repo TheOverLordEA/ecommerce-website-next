@@ -15,11 +15,20 @@ const Header = () => {
         <NavMenu />
 
         <Search className="flex flex: 1 1 0% items-center rounded" />
-        <div className="flex items-center p-1">
-          <HeaderItem title="Where" Icon={LocationMarkerIcon} />
-          <HeaderItem title="ENG" Icon={AnnotationIcon} />
-          <HeaderItem title="HOME" Icon={UserIcon} />
-          <HeaderItem title="USER" Icon={ShoppingCartIcon} />
+        <div className="flex items-center p-1 w-18 ">
+          <div className=" ">
+            <HeaderItem title="Where" Icon={LocationMarkerIcon} />
+          </div>
+          <div className="">
+            <HeaderItem title="ENG" Icon={AnnotationIcon} />
+          </div>
+          <div className="">
+            <HeaderItem title="HOME" Icon={UserIcon} />
+          </div>
+
+          <div className="">
+            <HeaderItem title="USER" Icon={ShoppingCartIcon} />
+          </div>
         </div>
       </header>
     </div>

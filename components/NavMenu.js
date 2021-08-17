@@ -19,7 +19,7 @@ const NavMenu = () => {
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-95 opacity-0"
       >
-        <Menu.Items className="w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none h-80 inline-block absolute">
+        <Menu.Items className="w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none h-80 inline-block absolute ">
           <div className="px-1 py-1 grid">
             <Menu.Item>
               {({ active }) => (
