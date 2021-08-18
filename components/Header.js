@@ -19,7 +19,7 @@ const Header = () => {
           <div className=" ">
             <HeaderItem title="Where" Icon={LocationMarkerIcon} />
           </div>
-          <div className="">
+          <div className="hidden lg:inline-block">
             <HeaderItem title="ENG" Icon={AnnotationIcon} />
           </div>
           <div className="">
@@ -35,12 +35,17 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex items-center bg-yellow-500 text-white space-x-3 p-2 pl-6 text-base ">
-        <p className="link items-center">8</p>
-        <p className="link">Prime</p>
-        <p className="">Best</p>
-        <p className="">New</p>
-        <p className="">World Market</p>
+      <div className="flex items-center bg-yellow-500 text-white p-2 pl-6 text-base w-100%">
+        <div className="flex pl-1 space-evenly space-x-3 flex-1">
+          <p className="link items-center">Featured Products</p>
+          <p className="link">Today's deals</p>
+          <p className="link">World Market</p>
+          <p className="link">Website Buisness</p>
+          <p className="link hidden lg:inline-flex">Apple</p>
+        </div>
+        <div className="flex pr-3">
+          <p className="link hidden lg:inline-flex "> Beomce A Buisness</p>
+        </div>
       </div>
     </header>
   );

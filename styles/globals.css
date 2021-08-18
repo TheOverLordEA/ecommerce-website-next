@@ -14,5 +14,6 @@
 @layer components {
   .link {
     @apply hover:underline;
+    @apply hover:cursor-pointer;
   }
 }
