@@ -13,8 +13,10 @@ export default function Home() {
       <Logo />
 
       <Header />
-      <Banner />
-      <Menu />
+      <main className="max-w-screen-2xl mx-auto ">
+        <Banner />
+        <Menu />
+      </main>
     </div>
   );
 }
