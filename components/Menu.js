@@ -1,5 +1,5 @@
-const Menu = () => {
-  return <div className="h-80 bg-yellow-800"></div>;
+const Menu = ({ products }) => {
+  return <div className="">The codew e</div>;
 };
 
 export default Menu;
