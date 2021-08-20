@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const Banner = () => {
   return (
-    <div className="relative lg:h-[500px] md:h-[430px] sm:h-[380px] h-[280px]">
+    <div className="relative lg:h-[500px] md:h-[430px] sm:h-[380px] h-[280px] cursor-pointer">
       <div className="absolute w-full h-32 bg-gradient-to-t from-white to-transparent bottom-0 z-20"></div>
       <Carousel
         autoPlay
