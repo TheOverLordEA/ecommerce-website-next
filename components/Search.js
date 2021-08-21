@@ -12,7 +12,7 @@ const Search = (props) => {
       />
 
       <SearchIcon
-        className="h-8 bg-indigo-500 rounded-full text-white p-1 hidden md:inline-flex cursor-pointer hover:bg-purple-800
+        className="h-8 bg-indigo-500 rounded-full text-white p-1 hidden md:inline-flex cursor-pointer hover:bg-green-800
       "
       />
     </div>
