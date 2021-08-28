@@ -1,12 +1,12 @@
-import Image from "next.image";
-import Header from "./Header";
-import ProductBodyNext from "./ProductBodyNext";
+import Image from "next/image";
 
-export const Product = () => {
+const Product = ({ id, title, price, description, category, image }) => {
   return (
-    <div className="">
-      <Header />
-      <ProductBodyNext />
+    <div>
+      <p>{category}</p>
+      <Image src={image} height={200} width={200} objectFit="contain" />
     </div>
   );
 };
+
+export default Product;
