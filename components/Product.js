@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/dist/client/image";
 
 const Product = ({ id, title, price, description, category, image }) => {
   return (
